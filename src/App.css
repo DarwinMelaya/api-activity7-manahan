@@ -1,0 +1,52 @@
+/* Add some styles to the root */
+#root {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+/* Change the logo styles */
+.logo {
+  height: 4em;
+  transition: transform 0.3s;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+/* Change the card styles */
+.card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  padding: 2em;
+}
+
+/* Add a hover effect to the read-the-docs link */
+.read-the-docs:hover {
+  color: #ff4081;
+}
+
+/* Add some animation to the logo */
+.logo {
+  animation: rotation 5s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+/* Add some transition to the card */
+.card {
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
